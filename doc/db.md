@@ -29,6 +29,7 @@
 |字段|类型|长度|可空|默认值|索引|备注|
 |--|--|--|--|--|--|--|
 |id|int(自增)||False||Primary|自增ID|
+|user_id|int||False||Normal|用户 ID(关联 users.id)|
 |name|varchar|200|False||Unique|博客名称|
 |description|varchar|500|True|||博客描述|
 |create_time|timestamp||False|CURRENT_TIMESTAMP||建立时间|
