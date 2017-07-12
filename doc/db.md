@@ -17,12 +17,12 @@
 
 ## third_logins
 
-|字段|类型|长度|可空|默认值|自增|索引|主键|备注|
-|--|--|--|--|--|--|--|--|--|
-|id|int||False||True||Primary|自增ID|
-|user_id|int||False|||True|Normal|用户 ID(关联 users.id)|
-|third_key|varchar|64|False|||True|Unique|第三方平台唯一标识|
-|third_name|varchar|50|False|||||第三方平台名称|
+|字段|类型|长度|可空|默认值|索引|备注|
+|--|--|--|--|--|--|--|
+|id|int(自增)||False||Primary|自增ID|
+|user_id|int||False||Normal|用户 ID(关联 users.id)|
+|third_key|varchar|64|False|True|Unique|第三方平台唯一标识|
+|third_name|varchar|50|False|||第三方平台名称|
 
 ## blogs
 
